@@ -1,0 +1,7 @@
+langchain
+langchain-community
+langchain-chroma
+langchain-ollama
+langgraph
+beautifulsoup4
+tiktoken
