@@ -34,28 +34,3 @@ graph LR
     style Generate fill:#fff3e0,stroke:#e65100,stroke-width:2px
 
 
-
----
-
-## 🛠 Tech Stack & Engineering Decisions
-
-| Component | Technology | Reason for Choice |
-| :--- | :--- | :--- |
-| **Orchestration** | `LangGraph` | To move beyond rigid chains and enable cyclic/stateful agent workflows. |
-| **LLM Engine** | `Ollama (Llama 3)` | High-performance local inference; eliminates cloud latency and cost. |
-| **Vector Database** | `ChromaDB` | Lightweight, persistent, and integrates natively with local file systems. |
-| **Embeddings** | `Nomic-Embed-Text` | Optimized for RAG tasks with higher semantic density than standard BERT models. |
-| **Framework** | `LangChain` | For standardized document loading and prompt templating. |
-
----
-
-## 📂 Project Structure
-
-```bash
-├── chroma_db/          # Persistent Vector Database (Generated automatically)
-├── ingest.py           # Script to load docs & build the Knowledge Base
-├── main.py             # Main entry point: The Multi-Agent Workflow
-├── requirements.txt    # Python dependencies
-├── README.md           # Documentation
-└── .gitignore          # Ignored files (venv, cache, db)
-
