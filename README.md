@@ -102,11 +102,22 @@ Based on the provided context, the key components of an autonomous agent system 
 
 ---
 
+## 🎮 Try the Live Demo
+You can run a live research session and watch the agent scour documents in real-time using the interactive dashboard:
+
+```bash
+# Run the Streamlit App
+streamlit run gui.py
+```
+
+
+---
+
 ## 🔮 Future Improvements
 
 * Web Search Node for real-time retrieval
 * Hallucination Grader Agent
-* Streamlit-based UI
+
 
 ---
 
