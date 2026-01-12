@@ -38,16 +38,9 @@ Explanation
 * Embeddings: Nomic-Embed-Text
 * Framework: LangChain
 
----
 
-## 📂 Project Structure
 
-chroma_db/          # Persistent vector database (auto-generated)
-ingest.py           # Builds the knowledge base
-main.py             # Multi-agent workflow entry point
-requirements.txt    # Python dependencies
-README.md           # Documentation
-.gitignore          # Ignored files
+
 
 ---
 
