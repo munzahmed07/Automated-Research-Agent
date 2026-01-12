@@ -5,3 +5,4 @@ langchain-ollama
 langgraph
 beautifulsoup4
 tiktoken
+streamlit
