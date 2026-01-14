@@ -11,7 +11,7 @@ urls = [
     "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
 ]
 
-print("⏳ Loading documents...")
+print(" Loading documents...")
 docs = [WebBaseLoader(url).load() for url in urls]
 # Flatten the list (technical detail: makes it a single list of docs)
 docs_list = [item for sublist in docs for item in sublist]
@@ -24,7 +24,7 @@ doc_splits = text_splitter.split_documents(docs_list)
 
 # 3. & 4. EMBED & STORE: Create the database
 # We use 'nomic-embed-text' to understand the meaning of the words
-print("⏳ creating vector database...")
+print(" creating vector database...")
 vectorstore = Chroma.from_documents(
     documents=doc_splits,
     collection_name="rag-chroma",
@@ -32,4 +32,5 @@ vectorstore = Chroma.from_documents(
     persist_directory="./chroma_db"  # This saves the DB to your hard drive
 )
 
-print("✅ Step 1 Complete! Database created in './chroma_db' folder.")
+print(" Step 1 Complete! Database created in './chroma_db' folder.")
+
